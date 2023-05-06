@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="596.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.ManageProductsController">
+   <children>
+      <StackPane layoutX="155.0" layoutY="10.0" prefHeight="576.0" prefWidth="620.0" style="-fx-background-color: #02030A;">
+         <children>
+            <Pane fx:id="pnlOverview" prefHeight="576.0" prefWidth="695.0" style="-fx-background-color: #FFFFFF;" stylesheets="@logIn.css">
+               <children>
+                  <Label layoutX="144.0" layoutY="52.0" prefHeight="73.0" prefWidth="205.0" text="Manage Products ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.6904761904761905">
+                           <stops>
+                              <Stop color="#c204b9" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button fx:id="menuProductsButton" layoutX="17.0" layoutY="266.0" mnemonicParsing="false" onAction="#backToMainMenu" prefHeight="59.0" prefWidth="468.0" text=" View Products" textFill="#170a0a">
+                     <font>
+                        <Font name="Traditional Arabic Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="searchProductsButton" layoutX="14.0" layoutY="195.0" mnemonicParsing="false" onAction="#searchProduct" prefHeight="59.0" prefWidth="468.0" text="Search Product" textFill="#281010">
+                     <font>
+                        <Font name="Traditional Arabic Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteProductsButton" layoutX="18.0" layoutY="338.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="59.0" prefWidth="468.0" text="Delete Product" textFill="#432222">
+                     <font>
+                        <Font name="Traditional Arabic Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="updateProductsButton" layoutX="15.0" layoutY="410.0" mnemonicParsing="false" onAction="#updateProduct" prefHeight="59.0" prefWidth="468.0" text=" Edit Product" textFill="#2c1717">
+                     <font>
+                        <Font name="Traditional Arabic Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addProductButton" layoutX="14.0" layoutY="125.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="59.0" prefWidth="468.0" style="-fx-background-radius: 40 px;" text="Add Product" textFill="#302032">
+                     <font>
+                        <Font name="Traditional Arabic Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="menuProductsButton1" layoutX="18.0" layoutY="481.0" mnemonicParsing="false" onAction="#backToMainMenu" prefHeight="59.0" prefWidth="468.0" text=" Back" textFill="#2c1414">
+                     <font>
+                        <Font name="Traditional Arabic Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

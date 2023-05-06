@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../LogIn/logIn.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.SearchController">
+   <children>
+      <Pane fx:id="content" layoutX="-238.0" layoutY="36.0" prefHeight="506.0" prefWidth="812.0">
+         <children>
+            <Label layoutX="433.0" layoutY="14.0" text=" Search for product">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.6571428571428571">
+                     <stops>
+                        <Stop color="#4d2251" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <TableView fx:id="products_table" layoutX="301.0" layoutY="173.0" prefHeight="218.0" prefWidth="486.0">
+               <columns>
+                  <TableColumn fx:id="idCol" prefWidth="87.0" text="ID" />
+                  <TableColumn fx:id="nameCol1" prefWidth="87.0" text="Name" />
+                  <TableColumn fx:id="categCol" prefWidth="82.0" text="Category" />
+                  <TableColumn fx:id="quantCol" prefWidth="84.0" text="Quantity" />
+                  <TableColumn fx:id="pricCol" minWidth="0.0" prefWidth="68.0" text="Price" />
+                  <TableColumn fx:id="descCol" text="Description" />
+               </columns>
+            </TableView>
+            <HBox alignment="CENTER_RIGHT" layoutX="414.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+               <children>
+                  <ComboBox fx:id="categCombo" prefHeight="34.0" prefWidth="221.0" promptText="Category" style="-fx-background-color: Description;" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

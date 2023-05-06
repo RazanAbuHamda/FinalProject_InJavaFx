@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="529.0" prefWidth="440.0" stylesheets="@../LogIn/logIn.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.ManageOrders.AddOrderController">
+   <children>
+      <Pane fx:id="content" layoutX="-383.0" layoutY="42.0" prefHeight="505.0" prefWidth="854.0" stylesheets="@../ManageProducts/logIn.css">
+         <children>
+            <Label layoutX="541.0" layoutY="42.0" text="Add  Order">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.7285714285714285">
+                     <stops>
+                        <Stop color="#753970" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" layoutX="487.0" layoutY="244.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <children>
+                  <TextField fx:id="oQuantity" prefHeight="31.0" prefWidth="238.0" promptText="Qantity" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="487.0" layoutY="306.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <children>
+                  <TextField fx:id="odate" prefHeight="31.0" prefWidth="236.0" promptText="Date" />
+               </children>
+            </HBox>
+            <HBox fx:id="userIdList" alignment="CENTER_RIGHT" layoutX="487.0" layoutY="113.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+               <children>
+                  <ComboBox fx:id="usersList" prefHeight="34.0" prefWidth="221.0" promptText="Users_id" style="-fx-background-color: Description;" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="487.0" layoutY="177.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+               <children>
+                  <ComboBox fx:id="productsList" prefHeight="34.0" prefWidth="221.0" promptText="products name" style="-fx-background-color: Description;" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+            <Button layoutX="548.0" layoutY="376.0" mnemonicParsing="false" onAction="#addOrderButton" prefHeight="41.0" prefWidth="161.0" text="Add Order" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

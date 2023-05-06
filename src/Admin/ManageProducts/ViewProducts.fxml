@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.ViewProductsController">
+   <children>
+      <Pane fx:id="content" layoutX="-253.0" layoutY="40.0" prefHeight="505.0" prefWidth="677.0">
+         <children>
+            <Label layoutX="490.0" layoutY="30.0" text=" View Products">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.5047619047619047">
+                     <stops>
+                        <Stop color="#7a377c" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <TableView fx:id="products_table" layoutX="324.0" layoutY="89.0" prefHeight="327.0" prefWidth="486.0">
+               <columns>
+                  <TableColumn fx:id="idCol" prefWidth="87.0" text="ID" />
+                  <TableColumn fx:id="nameCol1" prefWidth="87.0" text="Name" />
+                  <TableColumn fx:id="categCol" prefWidth="82.0" text="Category" />
+                  <TableColumn fx:id="quantCol" prefWidth="84.0" text="Quantity" />
+                  <TableColumn fx:id="pricCol" minWidth="0.0" prefWidth="68.0" text="Price" />
+                  <TableColumn fx:id="descCol" text="Description" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

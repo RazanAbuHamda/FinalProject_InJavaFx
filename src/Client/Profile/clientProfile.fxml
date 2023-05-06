@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="483.0" spacing="20.0" stylesheets="@logIn.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logIn.ClientProfileController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Profile" textAlignment="CENTER" wrappingWidth="483.13671875">
+         <font>
+            <Font size="37.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="50.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9571428571428572">
+               <stops>
+                  <Stop color="#6a0a90" />
+                  <Stop color="#864a80" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clientViewProfileButton" prefHeight="50.0" prefWidth="403.0" text="View Profile" />
+      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clientEditProfileButton" prefHeight="50.0" prefWidth="403.0" text="Edit Profile" />
+      <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#clientBackButton" prefHeight="50.0" prefWidth="403.0" text="Back" />
+   </children>
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+</VBox>

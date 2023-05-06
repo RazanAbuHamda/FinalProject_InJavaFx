@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="422.0" prefWidth="686.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    
+   <children>
+      <Pane fx:id="content" layoutX="17.0" layoutY="24.0" prefHeight="505.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="541.0" layoutY="42.0" text="Add Product" textFill="#070707">
+               <font>
+                  <Font name="Berlin Sans FB" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="496.0" fitWidth="384.0" layoutY="-7.0" pickOnBounds="true" smooth="false">
+<!--               <image>
+                  <Image url="@../Images/welcome.jpg" />
+               </image>-->
+            </ImageView>
+            <HBox alignment="CENTER_RIGHT" layoutX="486.0" layoutY="104.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+               <children>
+                  <TextField fx:id="pName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="221.0" promptText="Product Name  " style="-fx-background-color: transparent;" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="486.0" layoutY="152.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <children>
+                  <ComboBox fx:id="pCategory" prefHeight="34.0" prefWidth="221.0" promptText="Category" style="-fx-background-color: Description;" />
+               </children>
+            </HBox>
+            <Button fx:id="AddProductBtn" layoutX="487.0" layoutY="416.0" minHeight="-Infinity" minWidth="-Infinity" onAction="" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: #02C4C2; -fx-background-radius: 50px;" text="Add Product" textFill="WHITE" />
+            <HBox alignment="CENTER_RIGHT" layoutX="487.0" layoutY="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+               <children>
+                  <PasswordField fx:id="pPrice" prefHeight="35.0" prefWidth="218.0" promptText="Price" style="-fx-background-color: transparent;" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="487.0" layoutY="253.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 50px;">
+               <children>
+                  <PasswordField fx:id="pQuantity" prefHeight="35.0" prefWidth="218.0" promptText="Quantity" style="-fx-background-color: transparent;" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="487.0" layoutY="304.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="88.0" prefWidth="260.0" style="-fx-background-color: transparent; -fx-border-color: #E1E1E1; -fx-border-radius: 40 px;">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <children>
+                  <TextArea fx:id="pDescription" prefHeight="100.0" prefWidth="226.0" promptText="Description" style="-fx-background-color: transpare;" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
